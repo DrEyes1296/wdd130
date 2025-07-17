@@ -24,6 +24,10 @@ p {
     padding: 0;
 }
 
+main{
+    max-width: 840px;
+}
+
 aside { 
     width: 20rem;
     margin: 1rem;
@@ -38,8 +42,17 @@ aside img {
     height: auto;
 }
 
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p { padding: 0;}
+
 footer{
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
 }
+
+

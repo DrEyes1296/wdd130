@@ -1,34 +1,40 @@
-:root{
-    --primary-color: #45b1e8; /* picton blue */
-    --secondary-color: #dfdfe2; /* Platinum */
-    --accent1-color: #00a550; /* Pigment Green */
-    --accent2-color: #e1a95f; /* Earth Yellow */
+:root {
+    --primary-color: #45b1e8;
+    --secondary-color: #dfdfe2;
+    --accent1-color: #00a550;
+    --accent2-color: #e1a95f;
     --heading-font: "Rubik Dirt", sans-serif;
     --body-font: "Maiden Orange", sans-serif;
 }
 
-header{
-    background-color: var(--primary-color);
-    color: var(--accent2-color)
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: var(--body-font);
     color: var(--accent1-color);
 }
 
-header, main, footer {
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
     width: 840px;
     margin: 0 auto;
 }
 
-h1, h2{
+header img {
+    width: 120px;
+}
+
+main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -42,6 +48,10 @@ nav, p, section, article {
     text-decoration: none;
 }
 
+.socialmedia img {
+    width: 40px;
+}
+
 .hero {
     position: relative;
 }
@@ -52,7 +62,7 @@ nav, p, section, article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -60,11 +70,21 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff; /* white text - make sure there is enough contrast with the background-color */
+    color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(223, 223, 226, 0.85);
+    color: #000;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
+    width: 100px;
+    margin-left: 1rem;
 }
-

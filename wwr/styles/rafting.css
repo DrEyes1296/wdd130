@@ -7,16 +7,14 @@
     --body-font: "Maiden Orange", sans-serif;
 }
 
-header {
-    margin: 0;
-    padding: 0;
+header{
     box-sizing: border-box;
 }
 
 body {
     font-family: var(--body-font);
     color: #333;
-    max-width: 900px; 
+    max-width: 900px;
     margin: 1rem auto;
     border: 1px solid var(--secondary-color);
 }
@@ -32,40 +30,36 @@ p {
     padding: 0.5rem;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 40px;
-}
-
 header {
+    margin: 0;
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
     border-bottom: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 header img {
     width: 120px;
-}
+    }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 1.1rem;
     padding: 0.5rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 main section {
@@ -106,6 +100,7 @@ main section {
 .adventure-gallery figure {
     flex: 1;
     text-align: center;
+    margin: 0;
 }
 
 .adventure-gallery img {
@@ -125,9 +120,19 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .socialmedia {
     display: flex;
     gap: 1rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
 }

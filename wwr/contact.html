@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact RAPIDS for your next white water rafting adventure. Find our address, phone, email, and a contact form to ask questions.">
+    <meta name="author" content="Edson Reyes">
+    <title>Contact Us - Rapids</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/rapids-logo.jpg" alt="Rafting Company Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <div class="company-details">
+                <div>
+                    <h2>Our Information</h2>
+                    <p><strong>Address:</strong> 123 River Run Rd, Salt Lake City, UT 84101</p>
+                    <p><strong>Phone:</strong> <a href="tel:+18015551234">(801) 555-1234</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:contact@rapidsadventure.com">contact@rapidsadventure.com</a></p>
+                </div>
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193364.77353381617!2d-112.06173295093954!3d40.77549111762294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87523d9488d131ed%3A0x5b53b7a0484d31ca!2sSalt%20Lake%20City%2C%20UT!5e0!3m2!1sen!2sus!4v1678223598745!5m2!1sen!2sus" 
+                        width="600" 
+                        height="450" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="employees">
+            <h2>Meet Our Team!</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee-guide.jpg" alt="Lead Guide">
+                    <figcaption>Jacqueline Reyes - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-manager.jpg" alt="Reservations Manager">
+                    <figcaption>Monica Gamiño - Reservations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee-support.jpg" alt="Support Crew">
+                    <figcaption>Isaac Rojas - River Support</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="thankyou.html" method="post">
+                <div class="form-item">
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-item">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+                <div class="form-item">
+                    <fieldset>
+                        <legend>Purpose of Message</legend>
+                        <div class="radio-buttons">
+                           <input type="radio" id="inquiry" name="purpose" value="General Inquiry">
+                           <label for="inquiry">General Inquiry</label>
+                           <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                           <label for="reservation">Reservation Question</label>
+                           <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                           <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-item">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="form-item checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 | Rapids | Edson Reyes |</a></p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook Logo">
+            </a>
+            <a href="https://x.com">
+                <img src="images/x.jpg" alt="X (Twitter) Logo">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram Logo">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+</html>

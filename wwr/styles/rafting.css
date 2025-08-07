@@ -136,3 +136,133 @@ footer {
 .socialmedia img {
     width: 40px;
 }
+
+
+
+
+
+
+
+
+/* CONTACT PAGE CSS */
+
+.company-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.map iframe {
+    width: 100%;
+    border: 1px solid var(--secondary-color);
+}
+
+/* Styles the employee profile images and text */
+.employee-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.employee-gallery figure {
+    text-align: center;
+}
+
+.employee-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes images circular */
+    border: 3px solid var(--primary-color);
+}
+
+.employee-gallery figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* --- Form Styles --- */
+.contact-form-section {
+    background-color: #f9f9f9; 
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.form-item {
+    display: grid;
+    gap: 0.25rem;
+}
+
+
+.form-item.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: var(--body-font);
+}
+
+
+form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+form legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+}
+
+.radio-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.radio-buttons label {
+    font-weight: normal; 
+}
+
+form button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    justify-self: start;
+}
+
+form button:hover {
+    background-color: var(--accent1-color);
+}
+
+footer a {
+    color: var(--secondary-color);
+}

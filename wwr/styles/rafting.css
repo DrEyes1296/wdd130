@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #003f7a;
     --secondary-color: #dfdfe2;
@@ -5,10 +6,6 @@
     --accent2-color: #b67a02;
     --heading-font: "Rubik Dirt", sans-serif;
     --body-font: "Maiden Orange", sans-serif;
-}
-
-header{
-    box-sizing: border-box;
 }
 
 body {
@@ -137,13 +134,6 @@ footer {
     width: 40px;
 }
 
-
-
-
-
-
-
-
 /* CONTACT PAGE CSS */
 
 .company-details {
@@ -159,7 +149,6 @@ footer {
     border: 1px solid var(--secondary-color);
 }
 
-/* Styles the employee profile images and text */
 .employee-gallery {
     display: flex;
     justify-content: space-around;
@@ -174,7 +163,7 @@ footer {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%; /* Makes images circular */
+    border-radius: 50%;
     border: 3px solid var(--primary-color);
 }
 
@@ -184,7 +173,6 @@ footer {
     color: var(--primary-color);
 }
 
-/* --- Form Styles --- */
 .contact-form-section {
     background-color: #f9f9f9; 
 }
@@ -267,12 +255,10 @@ footer a {
     color: var(--secondary-color);
 }
 
-
-
 /* --- HOME PAGE CSS --- */
 
 .hero {
-    position: relative; /* This is the container for the absolutely positioned h1 */
+    position: relative;
 }
 
 .hero img {
@@ -287,7 +273,7 @@ footer a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 1rem 2rem;
     border-radius: 8px;
     font-size: 2.5rem;
@@ -371,7 +357,7 @@ footer a {
 }
 
 .cta-button:hover {
-    background-color: #9c6801; /* A darker version of accent2 */
+    background-color: #9c6801;
 }
 
 /* --- TRIPS PAGE CSS --- */
@@ -384,7 +370,7 @@ footer a {
 }
 
 .trips-cta h1 {
-    color: white; /* Override default h1 color */
+    color: white;
 }
 
 .trip-descriptions {
@@ -406,7 +392,6 @@ footer a {
     margin-bottom: 0;
 }
 
-/* Alternate layout for even-numbered cards for visual interest */
 .trip-card:nth-child(even) {
     grid-template-columns: 1fr 300px;
 }
@@ -455,4 +440,29 @@ footer a {
 
 .trips-table tbody tr:nth-child(odd) {
     background-color: #f9f9f9;
+}
+
+@media (max-width: 700px) {
+    header,
+    .home-grid,
+    .company-details,
+    .history-content,
+    .trip-card,
+    .trip-card:nth-child(even) {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul,
+    .newsletter-section form,
+    .adventure-gallery,
+    .employee-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .trip-card:nth-child(even) img,
+    .trip-card:nth-child(even) .trip-details {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }

@@ -131,6 +131,7 @@ footer {
 
 .socialmedia a {
     text-decoration: none;
+    border: none;
 }
 
 .socialmedia img {

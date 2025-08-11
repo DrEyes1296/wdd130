@@ -266,3 +266,193 @@ form button:hover {
 footer a {
     color: var(--secondary-color);
 }
+
+
+
+/* --- HOME PAGE CSS --- */
+
+.hero {
+    position: relative; /* This is the container for the absolutely positioned h1 */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.newsletter-section {
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.newsletter-section form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.newsletter-section input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.newsletter-section button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.newsletter-section button:hover {
+    background-color: var(--accent1-color);
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+.grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-item h3 {
+    color: var(--accent2-color);
+    margin: 1rem 0 0.5rem 0;
+}
+
+.home-cta {
+    text-align: center;
+    padding: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent2-color);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #9c6801; /* A darker version of accent2 */
+}
+
+/* --- TRIPS PAGE CSS --- */
+
+.trips-cta {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.trips-cta h1 {
+    color: white; /* Override default h1 color */
+}
+
+.trip-descriptions {
+    padding: 1rem;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 2rem;
+}
+
+.trip-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Alternate layout for even-numbered cards for visual interest */
+.trip-card:nth-child(even) {
+    grid-template-columns: 1fr 300px;
+}
+.trip-card:nth-child(even) img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.trip-card:nth-child(even) .trip-details {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.trip-details h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+.trips-table-section {
+    padding: 1rem;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.trips-table th, .trips-table td {
+    border: 1px solid var(--secondary-color);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.trips-table thead {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.trips-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}

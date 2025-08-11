@@ -134,8 +134,6 @@ footer {
     width: 40px;
 }
 
-/* CONTACT PAGE CSS */
-
 .company-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -174,7 +172,7 @@ footer {
 }
 
 .contact-form-section {
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
 }
 
 form {
@@ -232,7 +230,7 @@ form legend {
 
 
 .radio-buttons label {
-    font-weight: normal; 
+    font-weight: normal;
 }
 
 form button {
@@ -254,8 +252,6 @@ form button:hover {
 footer a {
     color: var(--secondary-color);
 }
-
-/* --- HOME PAGE CSS --- */
 
 .hero {
     position: relative;
@@ -360,8 +356,6 @@ footer a {
     background-color: #9c6801;
 }
 
-/* --- TRIPS PAGE CSS --- */
-
 .trips-cta {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -443,7 +437,17 @@ footer a {
 }
 
 @media (max-width: 700px) {
-    header,
+    header {
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.25rem 0.5rem;
+    }
+
     .home-grid,
     .company-details,
     .history-content,
@@ -452,7 +456,6 @@ footer a {
         grid-template-columns: 1fr;
     }
 
-    nav ul,
     .newsletter-section form,
     .adventure-gallery,
     .employee-gallery {

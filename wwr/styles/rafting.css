@@ -1,7 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 :root {
     --primary-color: #003f7a;
     --secondary-color: #dfdfe2;
@@ -9,6 +5,10 @@
     --accent2-color: #b67a02;
     --heading-font: "Rubik Dirt", sans-serif;
     --body-font: "Maiden Orange", sans-serif;
+}
+
+a img {
+    border: 0;
 }
 
 body {
@@ -147,7 +147,7 @@ footer {
 
 .map iframe {
     width: 100%;
-    border: 1px solid var(--secondary-color);
+    border: 0;
 }
 
 .employee-gallery {
@@ -439,6 +439,12 @@ footer a {
     background-color: #f9f9f9;
 }
 
+.socialmedia a:focus {
+    outline: none;
+    box-shadow: 0 0 8px white;
+    border-radius: 50%;
+}
+
 @media (max-width: 700px) {
     header {
         grid-template-columns: auto 1fr;
@@ -476,4 +482,3 @@ footer a {
         grid-row: auto;
     }
 }
-

@@ -476,3 +476,9 @@ footer a {
         grid-row: auto;
     }
 }
+
+.socialmedia a:focus {
+    outline: none; /* Remove the default blue outline */
+    box-shadow: 0 0 8px white; /* Add a soft white glow */
+    border-radius: 50%; /* Makes the glow circular */
+  }

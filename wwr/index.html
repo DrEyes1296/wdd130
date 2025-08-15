@@ -37,8 +37,10 @@
         <section class="newsletter-section">
             <h2>Join Our Adventure Newsletter!</h2>
             <form action="thankyou.html" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
+                <label for="name" class="sr-only">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email" class="sr-only">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
                 <button type="submit">Subscribe</button>
             </form>
         </section>
